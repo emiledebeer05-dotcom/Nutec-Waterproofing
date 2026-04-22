@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NUTEC Waterproofing — Free Site Visit & Quote | Western Cape</title>
+  <meta name="description" content="Get a free site visit and quote from NUTEC Waterproofing. Premium liquid-applied rubber coatings with 10-year UV protection for residential, commercial & industrial properties in Western Cape." />
+
+  <!-- Fonts: Outfit (display) + Plus Jakarta Sans (body) — taste-skill: no Inter for premium contexts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue:  '#04B0F8',
+              dark:  '#0080CE',
+              navy:  '#0F1A2E',
+              'navy-mid': '#162338',
+            }
+          },
+          fontFamily: {
+            display: ['Outfit', 'sans-serif'],
+            body:    ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          borderRadius: {
+            '2.5xl': '1.25rem',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fff; color: #111827; -webkit-font-smoothing: antialiased; }
+
+    /* ── Scroll reveal ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-d1 { transition-delay: 0.08s; }
+    .reveal-d2 { transition-delay: 0.16s; }
+    .reveal-d3 { transition-delay: 0.24s; }
+    .reveal-d4 { transition-delay: 0.32s; }
+
+    /* ── CTA pulse ring — hardware accelerated (transform + opacity only) ── */
+    @keyframes pulse-ring {
+      0%   { transform: scale(1);    opacity: 0.5; }
+      100% { transform: scale(1.45); opacity: 0; }
+    }
+    .cta-pulse { position: relative; display: inline-flex; }
+    .cta-pulse::before {
+      content: '';
+      position: absolute;
+      inset: -3px;
+      border-radius: 0.875rem;
+      background: #04B0F8;
+      animation: pulse-ring 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      pointer-events: none;
+    }
+
+    /* ── Number counter shimmer ── */
+    @keyframes count-up {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .stat-val { animation: count-up 0.5s ease forwards; animation-play-state: paused; }
+    .stat-val.animate { animation-play-state: running; }
+
+    /* ── Form inputs ── */
+    .f-input {
+      width: 100%;
+      border: 1.5px solid #E5E7EB;
+      border-radius: 0.75rem;
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #111827;
+      background: #fff;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .f-input::placeholder { color: #9CA3AF; }
+    .f-input:focus {
+      border-color: #04B0F8;
+      box-shadow: 0 0 0 3px rgba(4, 176, 248, 0.14);
+    }
+    .f-input.has-error {
+      border-color: #EF4444;
+      box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.11);
+    }
+    select.f-input { appearance: none; cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239CA3AF' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem; }
+    textarea.f-input { resize: none; }
+
+    /* ── Mobile sticky bottom bar padding ── */
+    @media (max-width: 767px) {
+      .mobile-pb { padding-bottom: 5.5rem; }
+    }
+
+    /* ── Step connector line ── */
+    @media (min-width: 768px) {
+      .step-connector::after {
+        content: '';
+        position: absolute;
+        top: 1.75rem;
+        left: calc(50% + 2rem);
+        right: calc(-50% + 2rem);
+        height: 1.5px;
+        background: linear-gradient(to right, #04B0F8 0%, rgba(4,176,248,0.15) 100%);
+      }
+    }
+
+    /* ── Subtle grid texture ── */
+    .grid-texture {
+      background-image: radial-gradient(circle, #E5E7EB 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       STICKY TOP BAR
+  ═══════════════════════════════════════════ -->
+  <div class="sticky top-0 z-50 bg-brand-navy border-b border-white/5">
+    <div class="max-w-5xl mx-auto px-5 py-2.5 flex items-center justify-between gap-4">
+      <span class="font-display text-[11px] font-semibold tracking-widest uppercase text-brand-blue hidden sm:block">
+        NUTEC Waterproofing — Free Site Visits Available, Book Yours Today
+      </span>
+      <span class="font-display text-[11px] font-semibold tracking-widest uppercase text-brand-blue sm:hidden">
+        NUTEC Waterproofing — Free Site Visit
+      </span>
+      <div class="flex items-center gap-3">
+        <a
+          href="tel:+27825733959"
+          class="hidden sm:flex items-center gap-2 text-white hover:text-brand-blue transition-colors duration-200 font-display font-semibold text-sm whitespace-nowrap"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+          082 573 3959
+        </a>
+        <a
+          href="#get-quote"
+          class="inline-flex items-center gap-1.5 bg-brand-blue hover:bg-brand-dark text-white font-display font-semibold text-xs px-4 py-2 rounded-lg transition-all duration-200 hover:scale-[1.03] active:scale-[0.97] whitespace-nowrap"
+        >
+          Book Free Site Visit
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO — asymmetric split (taste-skill: no centred hero for variance >4)
+  ═══════════════════════════════════════════ -->
+  <section class="relative min-h-[100dvh] flex items-center overflow-hidden bg-white">
+
+    <!-- Subtle dot texture — right quadrant only -->
+    <div class="absolute inset-y-0 right-0 w-1/2 grid-texture opacity-40 pointer-events-none"></div>
+
+    <!-- Blue accent stripe — top right -->
+    <div class="absolute top-0 right-0 w-[420px] h-1 bg-brand-blue opacity-60"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-5 py-20 md:py-0 w-full">
+      <div class="grid md:grid-cols-[1fr_400px] gap-10 lg:gap-16 items-center">
+
+        <!-- LEFT: Content -->
+        <div>
+
+          <!-- Pill badge -->
+          <div class="reveal inline-flex items-center gap-2 bg-brand-blue/10 border border-brand-blue/25 rounded-full px-4 py-1.5 mb-6">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-blue animate-pulse flex-shrink-0"></span>
+            <span class="font-display font-semibold text-brand-dark text-[11px] tracking-widest uppercase">
+              10-Year UV Protection Guarantee
+            </span>
+          </div>
+
+          <!-- Headline — taste-skill: tracking-tighter, 4xl→5xl→6xl scale -->
+          <h1 class="reveal reveal-d1 font-display font-black leading-[1.04] tracking-tighter text-gray-900 mb-5"
+              style="font-size: clamp(2.4rem, 6vw, 4rem);">
+            Stop the leaks.<br />
+            <span class="text-brand-blue">Protect your property</span><br />
+            for good.
+          </h1>
+
+          <!-- Sub-headline -->
+          <p class="reveal reveal-d2 text-gray-500 text-lg leading-relaxed max-w-[480px] mb-8">
+            NUTEC Waterproofing's seamless liquid rubber coating bonds directly to your roof — creating a watertight, flexible membrane that outlasts traditional waterproofing by years.
+          </p>
+
+          <!-- Trust badge strip -->
+          <div class="reveal reveal-d2 flex flex-wrap gap-2 mb-9">
+
+            <span class="inline-flex items-center gap-1.5 bg-gray-50 border border-gray-100 rounded-full px-3 py-1.5 text-xs font-medium text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#04B0F8" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+              5-Year Guarantee
+            </span>
+
+            <span class="inline-flex items-center gap-1.5 bg-gray-50 border border-gray-100 rounded-full px-3 py-1.5 text-xs font-medium text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#04B0F8" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              VOC &amp; Solvent Free
+            </span>
+
+            <span class="inline-flex items-center gap-1.5 bg-gray-50 border border-gray-100 rounded-full px-3 py-1.5 text-xs font-medium text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#04B0F8" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Sets in 1 Hour
+            </span>
+
+            <span class="inline-flex items-center gap-1.5 bg-gray-50 border border-gray-100 rounded-full px-3 py-1.5 text-xs font-medium text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#04B0F8" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Residential &amp; Commercial
+            </span>
+
+          </div>
+
+          <!-- Primary CTA -->
+          <div class="reveal reveal-d3 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div class="cta-pulse">
+              <a
+                href="#get-quote"
+                class="relative z-10 inline-flex items-center gap-2.5 bg-brand-blue hover:bg-brand-dark text-white font-display font-bold text-[15px] px-7 py-4 rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+              >
+                Book My FREE Site Visit
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+              </a>
+            </div>
+            <span class="text-xs text-gray-400 font-medium">No obligation. We come to you.</span>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: Image card — hidden on mobile -->
+        <div class="reveal reveal-d2 hidden md:block">
+          <div class="relative">
+
+            <!-- Main image -->
+            <div class="rounded-3xl overflow-hidden aspect-[4/5] bg-brand-navy-mid relative shadow-2xl">
+              <img
+                src="https://www.nutecwaterproofing.co.za/images/nutec-waterproofing-rubber-spray.jpg"
+                alt="NUTEC rubber waterproofing spray application"
+                class="w-full h-full object-cover"
+                onerror="this.style.display='none'"
+                loading="eager"
+              />
+              <!-- Fallback gradient if image fails -->
+              <div class="absolute inset-0 bg-gradient-to-br from-brand-navy via-brand-navy-mid to-brand-dark -z-10"></div>
+
+              <!-- Bottom overlay stat card -->
+              <div class="absolute bottom-0 left-0 right-0 p-4">
+                <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-lg flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-brand-blue flex items-center justify-center flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+                  </div>
+                  <div>
+                    <p class="font-display font-bold text-gray-900 text-sm">10-Year UV Protection</p>
+                    <p class="text-gray-400 text-xs">Residential · Commercial · Industrial</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating FREE badge — top right -->
+            <div class="absolute -top-4 -right-4 bg-brand-navy border border-white/10 rounded-2xl px-4 py-3 shadow-xl text-center">
+              <div class="font-display font-black text-2xl text-brand-blue leading-none">FREE</div>
+              <div class="text-gray-400 text-[10px] font-medium mt-0.5">Site Visit</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       PAIN POINTS — bento asymmetric grid
+  ═══════════════════════════════════════════ -->
+  <section class="bg-[#F8FAFB] py-16 md:py-20 border-t border-gray-100">
+    <div class="max-w-5xl mx-auto px-5">
+
+      <div class="reveal mb-11 text-center">
+        <h2 class="font-display font-bold tracking-tighter text-gray-900 mb-2.5" style="font-size: clamp(1.75rem, 4vw, 2.5rem);">
+          Is your roof quietly costing you money?
+        </h2>
+        <p class="text-gray-500 text-base max-w-lg mx-auto">
+          Most waterproofing failures start small and invisible — until the damage becomes expensive. NUTEC Waterproofing has the permanent fix.
+        </p>
+      </div>
+
+      <!-- Asymmetric 2+1 / 1+2 bento grid -->
+      <div class="grid md:grid-cols-3 gap-4">
+
+        <!-- Wide card -->
+        <div class="reveal reveal-d1 md:col-span-2 bg-white rounded-2xl p-6 border border-gray-100 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-red-50 flex items-center justify-center flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-display font-semibold text-gray-900 mb-1.5">Water ingress damages structures silently — from within</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">A small leak becomes rising damp, mould, and structural deterioration. What costs R2,000 to fix today can cost R20,000 left untreated for a season.</p>
+          </div>
+        </div>
+
+        <!-- Narrow card -->
+        <div class="reveal reveal-d2 bg-white rounded-2xl p-6 border border-gray-100 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-display font-semibold text-gray-900 mb-1.5">South Africa's UV breaks down conventional sealants in 2–3 years</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">NUTEC Waterproofing's rubber membrane is engineered specifically for our climate — guaranteed for 10 years.</p>
+          </div>
+        </div>
+
+        <!-- Narrow card -->
+        <div class="reveal reveal-d1 bg-white rounded-2xl p-6 border border-gray-100 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0080CE" stroke-width="2" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-display font-semibold text-gray-900 mb-1.5">Repeated patching never fixes the root cause</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">A seamless membrane eliminates every joint, crack, and failure point in one application.</p>
+          </div>
+        </div>
+
+        <!-- Wide dark card — solution pivot -->
+        <div class="reveal reveal-d2 md:col-span-2 bg-brand-navy rounded-2xl p-6 flex items-center gap-5">
+          <div class="flex-1">
+            <h3 class="font-display font-semibold text-white mb-2">NUTEC Waterproofing — one application, lasting protection, guaranteed.</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">NUTEC Waterproofing's cold-applied liquid rubber seals every surface irregularity in a single seamless coat — no joints, no annual maintenance, no repeated call-outs.</p>
+          </div>
+          <div class="hidden sm:flex w-14 h-14 rounded-2xl bg-brand-blue/15 items-center justify-center flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="#04B0F8" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES — 3-col card grid (contextual elevation, not generic)
+  ═══════════════════════════════════════════ -->
+  <section class="bg-white py-16 md:py-20 border-t border-gray-100">
+    <div class="max-w-5xl mx-auto px-5">
+
+      <div class="reveal mb-11">
+        <span class="font-display text-[11px] font-semibold tracking-widest uppercase text-brand-blue">What NUTEC Waterproofing Covers</span>
+        <h2 class="font-display font-bold tracking-tighter text-gray-900 mt-2" style="font-size: clamp(1.75rem, 4vw, 2.5rem);">
+          Built for every surface,<br class="hidden sm:block" />every application.
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
+
+        <div class="reveal reveal-d1 group p-5 rounded-2xl border border-gray-100 hover:border-brand-blue/30 hover:bg-brand-blue/[0.04] transition-all duration-300">
+          <div class="w-9 h-9 rounded-xl bg-brand-blue/10 flex items-center justify-center mb-4 group-hover:bg-brand-blue/20 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#04B0F8" stroke-width="1.75" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-gray-900 mb-1.5">Residential Roofs</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Flat, pitched, tiled, and IBR roofs. NUTEC Waterproofing's fully bonded membrane protects your home from rain, wind, and UV degradation.</p>
+        </div>
+
+        <div class="reveal reveal-d2 group p-5 rounded-2xl border border-gray-100 hover:border-brand-blue/30 hover:bg-brand-blue/[0.04] transition-all duration-300">
+          <div class="w-9 h-9 rounded-xl bg-brand-blue/10 flex items-center justify-center mb-4 group-hover:bg-brand-blue/20 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#04B0F8" stroke-width="1.75" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-gray-900 mb-1.5">Commercial &amp; Industrial</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Warehouses, factories, and flat-roof commercial buildings. NUTEC Waterproofing is spray-applied for rapid large-area coverage with minimal downtime.</p>
+        </div>
+
+        <div class="reveal reveal-d3 group p-5 rounded-2xl border border-gray-100 hover:border-brand-blue/30 hover:bg-brand-blue/[0.04] transition-all duration-300">
+          <div class="w-9 h-9 rounded-xl bg-brand-blue/10 flex items-center justify-center mb-4 group-hover:bg-brand-blue/20 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#04B0F8" stroke-width="1.75" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-gray-900 mb-1.5">Metal Roofs</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">NUTEC Waterproofing delivers corrosion protection and waterproofing for corrugated iron and steel roofing — with superior adhesion and elasticity.</p>
+        </div>
+
+        <div class="reveal reveal-d1 group p-5 rounded-2xl border border-gray-100 hover:border-brand-blue/30 hover:bg-brand-blue/[0.04] transition-all duration-300">
+          <div class="w-9 h-9 rounded-xl bg-brand-blue/10 flex items-center justify-center mb-4 group-hover:bg-brand-blue/20 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#04B0F8" stroke-width="1.75" aria-hidden="true"><path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"/><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-gray-900 mb-1.5">Concrete &amp; Slabs</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Tanking, basement waterproofing, and concrete slab sealing to prevent rising damp and structural water ingress.</p>
+        </div>
+
+        <div class="reveal reveal-d2 group p-5 rounded-2xl border border-gray-100 hover:border-brand-blue/30 hover:bg-brand-blue/[0.04] transition-all duration-300">
+          <div class="w-9 h-9 rounded-xl bg-brand-blue/10 flex items-center justify-center mb-4 group-hover:bg-brand-blue/20 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#04B0F8" stroke-width="1.75" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-gray-900 mb-1.5">Asbestos Encapsulation</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">NUTEC Waterproofing offers safe, specialist encapsulation of asbestos roofing — fully sealed and compliant without costly removal.</p>
+        </div>
+
+        <div class="reveal reveal-d3 group p-5 rounded-2xl border border-gray-100 hover:border-brand-blue/30 hover:bg-brand-blue/[0.04] transition-all duration-300">
+          <div class="w-9 h-9 rounded-xl bg-brand-blue/10 flex items-center justify-center mb-4 group-hover:bg-brand-blue/20 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#04B0F8" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-gray-900 mb-1.5">Chemical &amp; Corrosion Protection</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">NUTEC Waterproofing resists salt air, harsh chemicals, and coastal conditions — ideal for Western Cape and coastal properties.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       TRUST / STATS BAR
+  ═══════════════════════════════════════════ -->
+  <section class="bg-brand-navy py-12 border-t border-white/5" aria-label="Key statistics">
+    <div class="max-w-5xl mx-auto px-5">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center" id="stats-grid">
+
+        <div class="reveal stat-item">
+          <div class="font-display font-black text-brand-blue mb-1 stat-val" style="font-size: clamp(2rem, 5vw, 2.75rem);">10yr</div>
+          <div class="text-gray-400 text-sm">UV Protection</div>
+        </div>
+
+        <div class="reveal reveal-d1 stat-item">
+          <div class="font-display font-black text-brand-blue mb-1 stat-val" style="font-size: clamp(2rem, 5vw, 2.75rem);">5yr</div>
+          <div class="text-gray-400 text-sm">Product Guarantee</div>
+        </div>
+
+        <div class="reveal reveal-d2 stat-item">
+          <div class="font-display font-black text-brand-blue mb-1 stat-val" style="font-size: clamp(2rem, 5vw, 2.75rem);">0%</div>
+          <div class="text-gray-400 text-sm">VOC &amp; Solvent Free</div>
+        </div>
+
+        <div class="reveal reveal-d3 stat-item">
+          <div class="font-display font-black text-brand-blue mb-1 stat-val" style="font-size: clamp(2rem, 5vw, 2.75rem);">1hr</div>
+          <div class="text-gray-400 text-sm">Quick-Set Application</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       HOW IT WORKS — 3 steps
+  ═══════════════════════════════════════════ -->
+  <section class="bg-[#F8FAFB] py-16 md:py-20 border-t border-gray-100">
+    <div class="max-w-5xl mx-auto px-5">
+
+      <div class="reveal text-center mb-14">
+        <span class="font-display text-[11px] font-semibold tracking-widest uppercase text-brand-blue">How NUTEC Waterproofing Works</span>
+        <h2 class="font-display font-bold tracking-tighter text-gray-900 mt-2" style="font-size: clamp(1.75rem, 4vw, 2.5rem);">
+          From first call to protected property — in 3 steps
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="reveal reveal-d1 text-center relative step-connector">
+          <div class="w-14 h-14 rounded-2xl bg-brand-blue flex items-center justify-center mx-auto mb-5 shadow-md shadow-brand-blue/30">
+            <span class="font-display font-black text-white text-xl">1</span>
+          </div>
+          <h3 class="font-display font-bold text-gray-900 text-lg mb-2">Free Site Visit</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">A NUTEC Waterproofing specialist visits your property, assesses every problem area, and identifies the right system — at zero cost or obligation.</p>
+        </div>
+
+        <div class="reveal reveal-d2 text-center relative step-connector">
+          <div class="w-14 h-14 rounded-2xl bg-brand-blue flex items-center justify-center mx-auto mb-5 shadow-md shadow-brand-blue/30">
+            <span class="font-display font-black text-white text-xl">2</span>
+          </div>
+          <h3 class="font-display font-bold text-gray-900 text-lg mb-2">Tailored Quote</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">We recommend the right product for your surface and budget. Detailed written quote provided same-day where possible.</p>
+        </div>
+
+        <div class="reveal reveal-d3 text-center">
+          <div class="w-14 h-14 rounded-2xl bg-brand-blue flex items-center justify-center mx-auto mb-5 shadow-md shadow-brand-blue/30">
+            <span class="font-display font-black text-white text-xl">3</span>
+          </div>
+          <h3 class="font-display font-bold text-gray-900 text-lg mb-2">Expert Application</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Our NUTEC Waterproofing team applies your seamless rubber membrane — quick-setting, minimal disruption, guaranteed results.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       LEAD CAPTURE FORM — primary conversion section
+  ═══════════════════════════════════════════ -->
+  <section id="get-quote" class="bg-white py-16 md:py-24 border-t border-gray-100 mobile-pb">
+    <div class="max-w-5xl mx-auto px-5">
+      <div class="grid md:grid-cols-[1fr_460px] gap-10 lg:gap-16 items-start">
+
+        <!-- LEFT: Persuasion copy -->
+        <div class="reveal">
+          <span class="font-display text-[11px] font-semibold tracking-widest uppercase text-brand-blue">NUTEC Waterproofing — No Obligation</span>
+          <h2 class="font-display font-bold tracking-tighter text-gray-900 mt-2 mb-4" style="font-size: clamp(1.75rem, 4vw, 2.75rem);">
+            Book your FREE<br />NUTEC site visit &amp; quote
+          </h2>
+          <p class="text-gray-500 leading-relaxed mb-8">
+            Fill in the form and a NUTEC Waterproofing specialist will arrange a free assessment at a time that suits you. No sales pressure, no commitment required — just honest advice and a clear quote.
+          </p>
+
+          <!-- Checklist -->
+          <ul class="space-y-3 mb-10">
+            <li class="flex items-center gap-3">
+              <div class="w-5 h-5 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-gray-600 text-sm font-medium">We come to you — Western Cape &amp; surrounds</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <div class="w-5 h-5 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-gray-600 text-sm font-medium">Detailed written quote — same day where possible</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <div class="w-5 h-5 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-gray-600 text-sm font-medium">Honest assessment — we'll tell you exactly what's needed</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <div class="w-5 h-5 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-gray-600 text-sm font-medium">5-year product guarantee on every job</span>
+            </li>
+          </ul>
+
+          <!-- Alternative contact -->
+          <div class="border-t border-gray-100 pt-8">
+            <p class="text-gray-400 text-xs mb-3 font-medium uppercase tracking-wider">Prefer to call?</p>
+            <a href="tel:+27825733959" class="inline-flex items-center gap-3 group">
+              <div class="w-10 h-10 rounded-xl bg-brand-blue/10 flex items-center justify-center group-hover:bg-brand-blue/20 transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#04B0F8" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </div>
+              <span class="font-display font-bold text-gray-800 group-hover:text-brand-blue transition-colors duration-200">082 573 3959</span>
+            </a>
+            <p class="text-gray-400 text-xs mt-2">Office hours apply · Somerset West, Western Cape</p>
+          </div>
+        </div>
+
+        <!-- RIGHT: Lead form card -->
+        <div class="reveal reveal-d2">
+          <div class="bg-white border border-gray-100 rounded-3xl p-7 shadow-[0_8px_48px_rgba(0,0,0,0.08)]">
+
+            <!-- Form header -->
+            <div class="mb-6">
+              <div class="inline-flex items-center gap-2 mb-3">
+                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse" aria-hidden="true"></span>
+                <span class="text-xs text-gray-500 font-medium">Responding within 2 hours during office hours</span>
+              </div>
+              <h3 class="font-display font-bold text-xl text-gray-900">Get My Free NUTEC Quote</h3>
+            </div>
+
+            <!-- ── THE FORM ── -->
+            <form id="lead-form" novalidate>
+              <div class="space-y-4">
+
+                <!-- Name -->
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-1.5" for="f-name">Full Name</label>
+                  <input
+                    type="text"
+                    id="f-name"
+                    name="name"
+                    autocomplete="name"
+                    placeholder="Your full name"
+                    class="f-input"
+                  />
+                  <p class="field-err text-xs text-red-500 mt-1 hidden" role="alert">Please enter your name</p>
+                </div>
+
+                <!-- Phone -->
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-1.5" for="f-phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="f-phone"
+                    name="phone"
+                    autocomplete="tel"
+                    placeholder="e.g. 082 573 3959"
+                    class="f-input"
+                  />
+                  <p class="field-err text-xs text-red-500 mt-1 hidden" role="alert">Please enter a valid phone number</p>
+                </div>
+
+                <!-- Email -->
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-1.5" for="f-email">Email Address</label>
+                  <input
+                    type="email"
+                    id="f-email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="your@email.com"
+                    class="f-input"
+                  />
+                  <p class="field-err text-xs text-red-500 mt-1 hidden" role="alert">Please enter a valid email address</p>
+                </div>
+
+                <!-- Property type -->
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-1.5" for="f-type">Property Type</label>
+                  <select id="f-type" name="property_type" class="f-input">
+                    <option value="" disabled selected>Select property type</option>
+                    <option value="residential">Residential Home</option>
+                    <option value="commercial">Commercial Building</option>
+                    <option value="industrial">Industrial / Warehouse</option>
+                    <option value="sectional">Sectional Title / Complex</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <p class="field-err text-xs text-red-500 mt-1 hidden" role="alert">Please select a property type</p>
+                </div>
+
+                <!-- Issue description (optional) -->
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-1.5" for="f-issue">
+                    Describe the issue
+                    <span class="text-gray-400 font-normal">(optional)</span>
+                  </label>
+                  <textarea
+                    id="f-issue"
+                    name="issue"
+                    rows="3"
+                    placeholder="e.g. Leaking flat roof, water coming in through east wall after rain..."
+                    class="f-input"
+                  ></textarea>
+                </div>
+
+              </div>
+
+              <!-- Submit — with loading and error states -->
+              <div class="mt-6 space-y-3">
+                <button
+                  type="submit"
+                  id="f-submit"
+                  class="w-full relative bg-brand-blue hover:bg-brand-dark text-white font-display font-bold text-[15px] py-4 rounded-xl transition-all duration-300 hover:scale-[1.01] active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2.5"
+                >
+                  <span id="f-btn-label">Book My FREE Site Visit</span>
+                  <svg id="f-btn-arrow" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                  <svg id="f-btn-spinner" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="hidden animate-spin" aria-hidden="true"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+                </button>
+
+                <!-- Submission error message -->
+                <p id="f-submit-error" class="text-center text-xs text-red-500 hidden" role="alert">
+                  Something went wrong. Please try again or call us on 082 573 3959.
+                </p>
+
+                <p class="text-center text-xs text-gray-400">Your details are kept private. No spam, ever.</p>
+              </div>
+
+            </form>
+
+            <!-- ── SUCCESS STATE (hidden until submission) ── -->
+            <div id="f-success" class="hidden text-center py-4">
+              <div class="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center mx-auto mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3 class="font-display font-bold text-xl text-gray-900 mb-2">Request Received!</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                Thank you — a NUTEC Waterproofing specialist will be in touch within 2 hours during office hours to arrange your free site visit.
+              </p>
+              <a href="tel:+27825733959" class="inline-flex items-center gap-2 text-brand-blue font-display font-semibold text-sm hover:text-brand-dark transition-colors duration-200">
+                Or call now: 082 573 3959
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="bg-brand-navy border-t border-white/5 py-10">
+    <div class="max-w-5xl mx-auto px-5">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+
+        <div>
+          <p class="font-display font-black text-white text-lg">NUTEC Waterproofing</p>
+          <p class="text-gray-500 text-xs mt-0.5">A Tough, Flexible Seamless Solution</p>
+        </div>
+
+        <div class="flex flex-col gap-1.5 md:items-end">
+          <a href="tel:+27825733959" class="font-display font-semibold text-brand-blue hover:text-white transition-colors duration-200 text-sm">082 573 3959</a>
+          <a href="mailto:office@nutecwaterproofing.co.za" class="text-gray-500 text-xs hover:text-gray-300 transition-colors duration-200">office@nutecwaterproofing.co.za</a>
+          <span class="text-gray-600 text-xs">De Velde Lifestyle Estate, Somerset West, Western Cape</span>
+        </div>
+
+      </div>
+      <div class="border-t border-white/5 mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-gray-600 text-xs">&copy; 2015–2026 NUTEC Waterproofing. All rights reserved.</p>
+        <a href="https://www.nutecwaterproofing.co.za/" class="text-gray-600 hover:text-gray-400 text-xs transition-colors duration-200">nutecwaterproofing.co.za</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════
+       MOBILE STICKY CTA BAR
+  ═══════════════════════════════════════════ -->
+  <div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white border-t border-gray-100 px-4 py-3 flex gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]" aria-label="Quick contact">
+    <a
+      href="tel:+27825733959"
+      class="flex-1 flex items-center justify-center gap-2 border-2 border-brand-blue text-brand-blue font-display font-semibold text-sm py-3 rounded-xl transition-all duration-200 active:scale-[0.97]"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="#04B0F8" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      Call Now
+    </a>
+    <a
+      href="#get-quote"
+      class="flex-[2] flex items-center justify-center gap-2 bg-brand-blue hover:bg-brand-dark text-white font-display font-bold text-sm py-3 rounded-xl transition-all duration-200 active:scale-[0.97]"
+    >
+      Get Free Quote
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+    </a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       JAVASCRIPT — reveal, smooth scroll, form
+  ═══════════════════════════════════════════ -->
+  <script>
+    // ── Scroll reveal ──────────────────────────
+    (function () {
+      const els = document.querySelectorAll('.reveal');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      }, { threshold: 0.08 });
+      els.forEach(el => {
+        // Immediately reveal anything already in viewport (hero)
+        if (el.getBoundingClientRect().top < window.innerHeight) {
+          el.classList.add('visible');
+        } else {
+          io.observe(el);
+        }
+      });
+    })();
+
+    // ── Smooth scroll for anchor links ─────────
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // ── Form validation & submission ───────────
+    (function () {
+      const form        = document.getElementById('lead-form');
+      const successEl   = document.getElementById('f-success');
+      const submitBtn   = document.getElementById('f-submit');
+      const btnLabel    = document.getElementById('f-btn-label');
+      const btnArrow    = document.getElementById('f-btn-arrow');
+      const btnSpinner  = document.getElementById('f-btn-spinner');
+      const submitErr   = document.getElementById('f-submit-error');
+
+      const fields = [
+        { id: 'f-name',  validate: v => v.trim().length >= 2,                       msg: 'Please enter your name' },
+        { id: 'f-phone', validate: v => v.trim().replace(/\s/g,'').length >= 9,      msg: 'Please enter a valid phone number' },
+        { id: 'f-email', validate: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()), msg: 'Please enter a valid email address' },
+        { id: 'f-type',  validate: v => v !== '',                                    msg: 'Please select a property type' },
+      ];
+
+      function setFieldState(el, valid, msg) {
+        const errEl = el.parentElement.querySelector('.field-err');
+        if (valid) {
+          el.classList.remove('has-error');
+          if (errEl) errEl.classList.add('hidden');
+        } else {
+          el.classList.add('has-error');
+          if (errEl) { errEl.textContent = msg; errEl.classList.remove('hidden'); }
+        }
+        return valid;
+      }
+
+      function validateField(fieldDef) {
+        const el = document.getElementById(fieldDef.id);
+        return setFieldState(el, fieldDef.validate(el.value), fieldDef.msg);
+      }
+
+      // Live validation after first blur
+      fields.forEach(def => {
+        const el = document.getElementById(def.id);
+        el.addEventListener('blur', () => validateField(def));
+        el.addEventListener('input', () => {
+          if (el.classList.contains('has-error')) validateField(def);
+        });
+      });
+
+      function setLoading(on) {
+        submitBtn.disabled = on;
+        btnLabel.textContent = on ? 'Sending…' : 'Book My FREE Site Visit';
+        btnArrow.classList.toggle('hidden', on);
+        btnSpinner.classList.toggle('hidden', !on);
+      }
+
+      form.addEventListener('submit', async e => {
+        e.preventDefault();
+        submitErr.classList.add('hidden');
+
+        const allValid = fields.map(validateField).every(Boolean);
+        if (!allValid) return;
+
+        setLoading(true);
+
+        try {
+          // ── Replace this block with your actual form endpoint ──
+          // e.g. fetch('/api/leads', { method: 'POST', body: new FormData(form) })
+          await new Promise(r => setTimeout(r, 1600)); // simulated network delay
+
+          // Success
+          form.classList.add('hidden');
+          successEl.classList.remove('hidden');
+        } catch (_) {
+          setLoading(false);
+          submitErr.classList.remove('hidden');
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
