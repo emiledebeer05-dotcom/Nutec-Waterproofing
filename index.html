@@ -675,21 +675,6 @@
 
             </form>
 
-            <!-- ── SUCCESS STATE (hidden until submission) ── -->
-            <div id="f-success" class="hidden text-center py-4">
-              <div class="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <h3 class="font-display font-bold text-xl text-gray-900 mb-2">Request Received!</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-5">
-                Thank you — a NUTEC Waterproofing specialist will be in touch within 2 hours during office hours to arrange your free site visit.
-              </p>
-              <a href="tel:+27825733959" class="inline-flex items-center gap-2 text-brand-blue font-display font-semibold text-sm hover:text-brand-dark transition-colors duration-200">
-                Or call now: 082 573 3959
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-              </a>
-            </div>
-
           </div>
         </div>
 
@@ -779,7 +764,6 @@
     // ── Form validation & submission ───────────
     (function () {
       const form        = document.getElementById('lead-form');
-      const successEl   = document.getElementById('f-success');
       const submitBtn   = document.getElementById('f-submit');
       const btnLabel    = document.getElementById('f-btn-label');
       const btnArrow    = document.getElementById('f-btn-arrow');
@@ -836,13 +820,15 @@
         setLoading(true);
 
         try {
-          // ── Replace this block with your actual form endpoint ──
-          // e.g. fetch('/api/leads', { method: 'POST', body: new FormData(form) })
-          await new Promise(r => setTimeout(r, 1600)); // simulated network delay
+          const res = await fetch('https://formspree.io/f/xvzywjwg', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new FormData(form),
+          });
 
-          // Success
-          form.classList.add('hidden');
-          successEl.classList.remove('hidden');
+          if (!res.ok) throw new Error('submission failed');
+
+          window.location.href = 'thank-you.html';
         } catch (_) {
           setLoading(false);
           submitErr.classList.remove('hidden');
