@@ -728,6 +728,21 @@
                   <p class="field-err text-xs text-red-500 mt-1 hidden" role="alert">Please select a property type</p>
                 </div>
 
+                <!-- Area -->
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-1.5" for="f-area">Area You're Based In</label>
+                  <select id="f-area" name="area" class="f-input">
+                    <option value="" disabled selected>Select your area</option>
+                    <option value="somerset-west">Somerset West</option>
+                    <option value="strand">Strand</option>
+                    <option value="gordons-bay">Gordon's Bay</option>
+                    <option value="stellenbosch">Stellenbosch</option>
+                    <option value="paarl">Paarl</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <p class="field-err text-xs text-red-500 mt-1 hidden" role="alert">Please select your area</p>
+                </div>
+
                 <!-- Issue description (optional) -->
                 <div>
                   <label class="block text-sm font-semibold text-gray-700 mb-1.5" for="f-issue">
@@ -867,6 +882,7 @@
         { id: 'f-phone', validate: v => v.trim().replace(/\s/g,'').length >= 9,      msg: 'Please enter a valid phone number' },
         { id: 'f-email', validate: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()), msg: 'Please enter a valid email address' },
         { id: 'f-type',  validate: v => v !== '',                                    msg: 'Please select a property type' },
+        { id: 'f-area',  validate: v => v !== '',                                    msg: 'Please select your area' },
       ];
 
       function setFieldState(el, valid, msg) {
